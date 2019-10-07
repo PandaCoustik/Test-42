@@ -1,0 +1,14 @@
+void  *memcpy (void *dest, const void *src, size_t len)
+{
+  char *d; 
+  const char *s;
+  
+  *d = dest;
+  *s = src;
+  while (len)
+  {
+    *d++ = *s++;
+    len--;
+ }
+  return (dest);
+}
