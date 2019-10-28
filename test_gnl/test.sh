@@ -1,9 +1,9 @@
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=64 -I. ../get_next_line.c ../get_next_line_utils.c test.c -o get_next_line
+gcc -Wall -Wextra -Werror -D BUFFER_SIZE=64 -I. ../../get_next_line.c ../../get_next_line_utils.c test.c -o get_next_line
 ./get_next_line < test/simple > result
 
 rm -f get_next_line
 
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=64 -I. ../get_next_line_bonus.c ../get_next_line_utils_bonus.c test.c -o get_next_line
+gcc -Wall -Wextra -Werror -D BUFFER_SIZE=64 -I. ../../get_next_line_bonus.c ../../get_next_line_utils_bonus.c test.c -o get_next_line
 ./get_next_line < test/simple > result_bonus
 
 rm -f get_next_line
