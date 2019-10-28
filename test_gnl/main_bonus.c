@@ -6,7 +6,7 @@
 /*   By: jpanneau <jpanneau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 09:01:12 by jpanneau          #+#    #+#             */
-/*   Updated: 2019/10/23 12:26:43 by jpanneau         ###   ########.fr       */
+/*   Updated: 2019/10/28 09:23:56 by jpanneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int		main(int ac, char **av)
 				ret[i] = get_next_line(fd[i], &line);
 				if (line)
 				{
-					printf("FILE\033[1;31m%s: %d\033[0m\t", av[i + 1], s_line);
+					printf("ret : %d | FILE\033[1;31m%s: %d\033[0m\t", ret[i], av[i + 1], s_line);
 					printf("%s\n", line);
 				}
 				if (line)
@@ -72,10 +72,10 @@ int		main(int ac, char **av)
 		int num = 0;
 		char *line = NULL;
 		int ret = 2;
-	
+
 		while ((ret = get_next_line(fd, &line)) > 0)
 		{
-			printf("%d   %s\n", ++num, line);
+			printf("ret : %d | %d   %s\n", ret, ++num, line);
 			if (line)
 				free(line);
 		}
