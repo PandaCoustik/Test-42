@@ -6,7 +6,7 @@
 /*   By: ncolomer <ncolomer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:39:00 by ncolomer          #+#    #+#             */
-/*   Updated: 2019/10/25 16:14:04 by jpanneau         ###   ########.fr       */
+/*   Updated: 2019/10/28 08:39:35 by jpanneau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>
-#include "get_next_line.h"
+#include "../../get_next_line.h"
 
 void
 	test_fd(char **buffer, char const *filename, int fd)
