@@ -8,12 +8,12 @@ int		mix_test_05(void)
 	int		save_stdout;
 
 	setlocale(LC_ALL, "");
-	ft_write_test_name("test %-7c %007d%-10.2s!!, 0xd777, 0x45, L=-0453+{~}〻");
+	ft_write_test_name("test%-7c%007d%-10.2s!!, 0xd777, 0x45, L=-0453+{~}〻");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("test %-7c %007d%-10.2s!!", 0xd777, 0x45, "L=-0453+{~}〻");
+	data.r1 = ft_printf("test%-7c%007d%-10.2s!!", 0xd777, 0x45, "L=-0453+{~}〻");
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("test %-7c %007d%-10.2s!!", 0xd777, 0x45, "L=-0453+{~}〻");
+	data.r2 = printf("test%-7c%007d%-10.2s!!", 0xd777, 0x45, "L=-0453+{~}〻");
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)
